@@ -1,0 +1,404 @@
+body {
+    --color-text: #000;
+    --color-bg: #fff;
+    --color-link: #000;
+    --color-link-hover: #000;
+    --color-logo-bg: #1D1572;
+    height: 100%;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.js .loading::before {
+    content: '';
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-logo-bg);
+}
+
+.hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+.m-1 {
+    margin: 0.5rem 0rem;
+}
+
+.m-2 {
+    margin: 2.5rem 0rem;
+}
+
+/* fotos */
+
+.m-3 {
+    margin: 0rem;
+    padding: 0em;
+}
+
+.m-4 {
+    margin-bottom: 0rem;
+    padding: 5rem 5rem 0rem 5rem;
+}
+
+.floating-text {
+    top: -15vh;
+    background-color: white;
+}
+
+/* Icons */
+
+.icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 auto;
+    fill: currentColor;
+}
+
+.icon--inline {
+    display: inline-block;
+    width: 0.75em;
+    height: 0.65em;
+}
+
+.icon--light {
+    color: #5cad7c;
+}
+
+main {
+    position: relative;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+}
+
+/*
+.no-js .content {
+    top: 100vh;
+}*/
+
+.center {
+    position: relative;
+    width: 100%;
+    display: flex;
+    top: 25%;
+    flex-direction: column;
+    justify-content: center
+}
+
+.intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.no-js .intro {
+    position: absolute;
+}
+
+.bg-dark {
+    background-color: #1C173F;
+}
+
+.intro__box,
+.intro__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    z-index: 99;
+    /*    background-color: #1D1572;*/
+}
+
+
+.overlay {
+    background-image: url(/images/header.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.intro__box {
+    transform-origin: 0 0;
+    z-index: 0;
+}
+
+.no-js .intro__box {
+    width: 100%;
+    height: 100%;
+}
+
+.intro__logo {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    color: #DB4A3E;
+    pointer-events: auto;
+    cursor: pointer;
+    z-index: 9999999;
+}
+
+.icon--arrowup {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.intro__logo-text {
+    font-weight: normal;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    padding: 0.25rem 0 0 0;
+    font-size: 0.85rem;
+    opacity: 0;
+}
+
+.intro__title-wrap {
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    width: 100%
+}
+
+
+
+.intro__title {
+    font-size: 5vw;
+    width: 50vw;
+    align-self: center;
+    color: #fff
+}
+
+.intro__subtitle {
+    margin: 0;
+    font-size: 3rem;
+    color: white;
+}
+
+.intro__info {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+    color: #DB4A3E;
+}
+
+.intro__enter {
+    text-transform: lowercase;
+    margin: 5vh 0 0 0;
+    padding: 1rem 0 0 0;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+}
+
+.intro__enter:hover {
+    color: #000;
+    text-decoration: none
+}
+
+.no-js .intro__enter {
+    display: none;
+}
+
+.intro__content {
+    position: relative;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.intro__content-title {
+    text-transform: lowercase;
+    font-size: 1.5rem;
+    line-height: 0.5;
+    font-weight: normal;
+    display: none;
+    margin: 0;
+}
+
+.intro__content-title::before {
+    content: '\2015';
+    margin: 0 1rem 0;
+    font-size: 1.25rem;
+}
+
+.intro__content-text {
+    font-size: 0.85rem;
+}
+
+/******************************************
+ Slides hover
+******************************************/
+
+@import url("https://rsms.me/inter/inter-ui.css");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter UI', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.slider {
+    position: fixed;
+    top: 5%;
+    right: 35%;
+    width: 230px;
+}
+
+.slider-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30em;
+    height: 100%;
+    transition-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+    transition-duration: 300ms;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    width: 600px;
+    height: 600px;
+    transition-timing-function: ease-in-out;
+    transition: background 500ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+    opacity: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 35%;
+    box-shadow: 20px 20px 0px 0px #1C173F;
+
+}
+
+.teer-a {
+    background-image: url(/images/teer-a-work.png);
+}
+
+.read {
+    background-image: url(/images/transava-read-work.png);
+}
+
+.light {
+    background-image: url(/images/case_sense_of_light.png);
+}
+
+.ya {
+    background-image: url(/images/case_young_art.png);
+}
+
+.alibaba {
+    background-image: url(/images/case_alibaba.png);
+
+}
+
+.camille {
+    background-image: url(/images/cafe-camille-work.png);
+}
+
+.space {
+    background-image: url(/images/spacequizz-work.png);
+}
+
+.post {
+    background-image: url(/images/plugandplay.png);
+
+}
+
+.dieet {
+    background-image: url(/images/case_dieetplanner.png);
+}
+
+.isga {
+    background-image: url(/images/isga-work.png);
+
+}
+
+.koffie {
+    background-image: url(/images/case_koffieautomaten_hva.png);
+}
+
+.papabubble {
+    background-image: url(/images/case_papabubble.png);
+
+}
+
+.pyo {
+    background-image: url(/images/vormgeving-work.png);
+
+}
+
+.oba {
+    background-image: url(/images/oba-work.png);
+}
+
+.melkweg {
+    background-image: url(/images/boek-een-boek-work.png);
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 21%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-nav > li {
+    margin-bottom: 2rem;
+    cursor: pointer;
+    color: #5E5E5E;
+    transition-duration: 250ms;
+    background-color: transparent;
+}
+
+.slider-nav > li h2 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 120%;
+}
+
+.slider-nav > li:hover,
+.slider-nav > li.active {
+    color: #2B2B2B;
+}
