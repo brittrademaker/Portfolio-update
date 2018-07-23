@@ -39,7 +39,18 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/base.css" />
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111371831-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111371831-2');
+    </script>
 
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -53,12 +64,10 @@
 <body>
     <header>
         <!-- This element animates: -->
-        <div class="intro__box">
-
-        </div>
-        <a class="intro__logo">
-        <svg class="icon icon--arrowup"><use xlink:href="#icon-arrowup"></use></svg>
-        </a>
+        <div class="intro__box"></div>
+        <a href="index.html" class="intro__logo">
+                <svg class="icon icon--arrowup"><use xlink:href="#icon-arrowup"></use></svg>
+            </a>
     </header>
     <svg class="hidden">
 			<symbol id="icon-arrow" viewBox="0 0 24 24">
@@ -90,50 +99,20 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="work-entry-flex animate-box js-fullheight">
+                        <div class=" animate-box js-fullheight">
 
+                            <div class="center contact_info">
+                                <h1 class=" ">Zin om over design en ambities te praten?</h1>
+                                <p>
+                                    <a href="">rademaker.britt@hotmail.com</a>
+                                </p>
 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer -->
-        <footer id="footer" class="page-footer font-smallblue pt-4 mt-4 bg-dark">
-
-            <!-- Footer Links -->
-            <div class="container-fluid text-left text-md-left">
-
-                <!-- Grid row -->
-                <div class="row">
-
-                    <!-- Grid column -->
-                    <div class="col-md-4">
-
-                        <!-- Content -->
-                        <h1>Zin om over design en ambities te praten?</h1>
-                        <p>
-                            <a href="">rademaker.britt@hotmail.com</a>
-                        </p>
-
-                    </div>
-                    <div class="col-md-5">
-
-                    </div>
-                </div>
-                <!-- Grid row -->
-
-            </div>
-            <!-- Footer Links -->
-
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2018 Copyright:
-                <a href="https://mdbootstrap.com/bootstrap-tutorial/">Britt Rademaker</a>
-            </div>
-            <!-- Copyright -->
-
-        </footer>
-        <!-- Footer -->
     </div>
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>

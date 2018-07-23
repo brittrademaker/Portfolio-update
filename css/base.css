@@ -3,7 +3,7 @@ body {
     --color-bg: #fff;
     --color-link: #000;
     --color-link-hover: #000;
-    --color-logo-bg: #1D1572;
+    --color-logo-bg: #120A60;
     height: 100%;
     color: var(--color-text);
     background-color: var(--color-bg);
@@ -48,6 +48,19 @@ body {
 .m-4 {
     margin-bottom: 0rem;
     padding: 5rem 5rem 0rem 5rem;
+}
+
+.m-5 {
+    margin: 5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .m-4,
+    .m-5 {
+        margin: 0em;
+        padding: 2em;
+    }
+
 }
 
 .floating-text {
@@ -127,7 +140,7 @@ main {
     height: 80px;
     opacity: 1;
     z-index: 99;
-    /*    background-color: #1D1572;*/
+    /*    background-color: #120A60;*/
 }
 
 
@@ -248,9 +261,10 @@ main {
     font-size: 0.85rem;
 }
 
-/******************************************
+/*
+*****************************************
  Slides hover
-******************************************/
+*****************************************
 
 @import url("https://rsms.me/inter/inter-ui.css");
 * {
@@ -266,7 +280,9 @@ ul {
     padding: 0;
     list-style-type: none;
 }
+*/
 
+/*
 .slider {
     position: fixed;
     top: 5%;
@@ -285,7 +301,9 @@ ul {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
 }
+*/
 
+/*
 .slide {
     position: absolute;
     top: 0;
@@ -305,6 +323,7 @@ ul {
     box-shadow: 20px 20px 0px 0px #1C173F;
 
 }
+*/
 
 .teer-a {
     background-image: url(/images/teer-a-work.png);
@@ -328,7 +347,7 @@ ul {
 }
 
 .camille {
-    background-image: url(/images/cafe-camille-work.png);
+    background-image: url(/images/camille-work.png);
 }
 
 .space {
@@ -371,6 +390,7 @@ ul {
     background-image: url(/images/boek-een-boek-work.png);
 }
 
+/*
 .slide.active {
     opacity: 1;
 }
@@ -402,3 +422,4 @@ ul {
 .slider-nav > li.active {
     color: #2B2B2B;
 }
+*/
