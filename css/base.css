@@ -3,7 +3,14 @@ body {
     --color-bg: #fff;
     --color-link: #000;
     --color-link-hover: #000;
-    --color-logo-bg: #120A60;
+    --color-logo-bg: #1D1572;
+    --color-dark-pink: #FEB7BA;
+    --color-light-pink: #FCE8E9;
+    --color-light-green: #2CD1CA;
+    --color-dark-blue: #1D1572;
+    --color-light-blue: #271E8A;
+    --color-lighter-green: #91EBE7;
+
     height: 100%;
     color: var(--color-text);
     background-color: var(--color-bg);
@@ -127,10 +134,6 @@ main {
     position: absolute;
 }
 
-.bg-dark {
-    background-color: #1C173F;
-}
-
 .intro__box,
 .intro__logo {
     position: absolute;
@@ -145,7 +148,7 @@ main {
 
 
 .overlay {
-    background-image: url(/images/header.svg);
+    background-image: url(/images/header-illustratie-s.svg);
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
@@ -168,7 +171,7 @@ main {
     background: transparent;
     display: flex;
     align-items: center;
-    color: #DB4A3E;
+    color: var(--color-dark-blue);
     pointer-events: auto;
     cursor: pointer;
     z-index: 9999999;
@@ -202,32 +205,33 @@ main {
     font-size: 5vw;
     width: 50vw;
     align-self: center;
-    color: #fff
+    color: #fff;
 }
 
 .intro__subtitle {
     margin: 0;
     font-size: 3rem;
-    color: white;
+    color: #fff;
 }
 
 .intro__info {
     margin: 0 0 1rem 0;
     font-size: 2rem;
-    color: #DB4A3E;
+    color: #1D1572;
 }
 
 .intro__enter {
     text-transform: lowercase;
     margin: 5vh 0 0 0;
     padding: 1rem 0 0 0;
+    padding-top: 5em;
     display: inline-block;
     cursor: pointer;
     color: #fff;
 }
 
 .intro__enter:hover {
-    color: #000;
+    color: #fff;
     text-decoration: none
 }
 
@@ -260,70 +264,6 @@ main {
 .intro__content-text {
     font-size: 0.85rem;
 }
-
-/*
-*****************************************
- Slides hover
-*****************************************
-
-@import url("https://rsms.me/inter/inter-ui.css");
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Inter UI', sans-serif;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-*/
-
-/*
-.slider {
-    position: fixed;
-    top: 5%;
-    right: 35%;
-    width: 230px;
-}
-
-.slider-wrapper {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 30em;
-    height: 100%;
-    transition-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
-    transition-duration: 300ms;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-}
-*/
-
-/*
-.slide {
-    position: absolute;
-    top: 0;
-    width: 600px;
-    height: 600px;
-    transition-timing-function: ease-in-out;
-    transition: background 500ms;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    color: white;
-    opacity: 0;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 35%;
-    box-shadow: 20px 20px 0px 0px #1C173F;
-
-}
-*/
 
 .teer-a {
     background-image: url(/images/teer-a-work.png);
@@ -387,39 +327,5 @@ ul {
 }
 
 .melkweg {
-    background-image: url(/images/boek-een-boek-work.png);
+    background-image: url(/images/melkweg-work.png);
 }
-
-/*
-.slide.active {
-    opacity: 1;
-}
-
-.slider-nav {
-    position: absolute;
-    top: 21%;
-    left: 15%;
-    display: flex;
-    flex-direction: column;
-}
-
-.slider-nav > li {
-    margin-bottom: 2rem;
-    cursor: pointer;
-    color: #5E5E5E;
-    transition-duration: 250ms;
-    background-color: transparent;
-}
-
-.slider-nav > li h2 {
-    margin: 0;
-    font-weight: 500;
-    font-size: 4rem;
-    line-height: 120%;
-}
-
-.slider-nav > li:hover,
-.slider-nav > li.active {
-    color: #2B2B2B;
-}
-*/
