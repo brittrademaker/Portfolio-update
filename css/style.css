@@ -30,6 +30,7 @@ body {
     --color-light-green: #2CD1CA;
     --color-dark-blue: #1D1572;
     --color-light-blue: #271E8A;
+
 }
 
 .lighter-green {
@@ -97,6 +98,11 @@ li a {
         color: var(--color-dark-blue);
 
     }
+}
+
+p a {
+    color: var(--color-dark-blue);
+    font-weight: 600;
 }
 
 #colorlib-wrapper {
@@ -369,6 +375,7 @@ h2 {
     height: auto;
 }
 
+
 @media screen and (max-width: 768px) {
     #colorlib-hero .hero-flex .text-inner .desc:after {
         opacity: 0;
@@ -382,6 +389,8 @@ h2 {
     text-decoration: none;
     padding: 0.5em 2em;
     border-radius: 1px;
+    z-index: 999;
+    pointer-events: auto;
 }
 
 .btn-case:hover {
