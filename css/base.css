@@ -145,6 +145,7 @@ main {
     height: 80px;
     opacity: 1;
     z-index: 99;
+    font-family: Futura;
     background-color: var(--color-dark-green);
     justify-content: center;
     color: #fff !important;
