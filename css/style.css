@@ -79,6 +79,7 @@ nav {
     padding: 1.75em;
     flex: 1;
     margin-left: auto;
+
 }
 
 nav li {
@@ -94,10 +95,12 @@ li a {
 }
 
 @media screen and (max-width: 480px) {
-    li a {
-        color: var(--color-dark-blue);
+    nav {
+
+        width: 100%;
 
     }
+
 }
 
 p a {
@@ -666,7 +669,8 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-    #colorlib-contact {
+    #colorlib-contact,
+    #colorlib-work {
         background-size: cover;
         background-position: 50%;
         background-repeat: no-repeat;
@@ -816,7 +820,7 @@ h2 {
     width: 100%;
     color: #fff;
     background-image: url(/images/Fill%201.svg);
-    background-size: 600px;
+    background-size: 500px;
     background-repeat: no-repeat;
     background-position: 90% 90%;
 }

@@ -240,8 +240,19 @@ main {
     color: #fff;
 }
 
+@media screen and (max-width: 480px) {
+    .intro__title {
+        margin: 2rem;
+        color: var(--color-dark-blue);
+    }
+    .intro__info {
+        margin: 2rem;
+        color: #ffff;
+    }
+}
+
 .intro__enter:hover {
-    color: #fff;
+    color: var(--color-dark-green);
     text-decoration: none
 }
 
