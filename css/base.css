@@ -187,6 +187,11 @@ main {
     z-index: 9999999;
 }
 
+.intro__logo:hover {
+    color: var(--color-light-blue) !important;
+
+}
+
 .icon--arrowup {
     width: 1.25rem;
     height: 1.25rem;
@@ -232,10 +237,10 @@ main {
 
 .intro__enter {
     text-transform: lowercase;
-    margin: 5vh 0 0 0;
-    padding: 1rem 0 0 0;
-    padding-top: 5em;
-    display: inline-block;
+    padding: 1.5em 4em;
+    align-self: center;
+    bottom: 0px;
+    position: fixed;
     cursor: pointer;
     color: #fff;
 }
@@ -252,7 +257,7 @@ main {
 }
 
 .intro__enter:hover {
-    color: var(--color-dark-green);
+    color: var(--color-light-blue);
     text-decoration: none
 }
 
