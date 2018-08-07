@@ -24,12 +24,12 @@ body {
     --color-link: #000;
     --color-link-hover: #000;
     --color-logo-bg: #1D1572;
-    --color-dark-pink: #FEB7BA;
-    --color-light-pink: #FCE8E9;
-    --color-dark-green: #15BDB6;
-    --color-light-green: #2CD1CA;
-    --color-dark-blue: #1D1572;
-    --color-light-blue: #271E8A;
+    --color-dark-pink: #FF5F6E;
+    --color-light-pink: #FFBBC1;
+    --color-light-orange: #FFEFD1;
+    --color-dark-blue: #142FBB;
+    --color-light-blue: #2B74FF;
+    --color-dark-orange: #FFD796;
 
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .light-pink {
-    background-color: var(--color-light-pink) !important;
+    background-color: var(--color-light-orange) !important;
 
 }
 
@@ -58,19 +58,24 @@ body {
 
 }
 
-.light-green {
-    background-color: var(--color-light-green);
+.light-orange {
+    background-color: var(--color-light-orange);
 
 }
 
-.dark-green {
-    background-color: var(--color-dark-green);
+.dark-orange {
+    background-color: var(--color-dark-orange);
 
 }
 
 .menu-list {
     display: flex;
     justify-content: flex-end;
+    z-index: 99999;
+}
+
+.menu-list nav {
+    z-index: 9999;
 }
 
 nav {
@@ -328,7 +333,7 @@ h2 {
     #colorlib-hero .hero-flex .text-inner {
         padding: 2em;
         color: #fff;
-        background-color: var(--color-dark-green);
+        background-color: var(--color-dark-orange);
 
     }
 
@@ -387,7 +392,7 @@ h2 {
 
 .btn-case {
     color: #ffff;
-    background-color: var(--color-light-blue);
+    background-color: var(--color-dark-blue);
     box-shadow: 5px 5px 0px 0px #1D1572;
     text-decoration: none;
     padding: 0.5em 2em;
@@ -467,7 +472,7 @@ h2 {
     left: 0;
     right: 0;
     font-size: 250px;
-    color: var(--color-dark-pink);
+    color: var(--color-dark-orange);
     font-weight: 700;
     z-index: -1;
 }
@@ -650,6 +655,7 @@ h2 {
 
 #colorlib-work {
     background-image: url(/images/contact.svg);
+    background-position: 50% 3%;
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -662,7 +668,8 @@ h2 {
 }
 
 #colorlib-contact {
-    background-image: url(/images/work.svg);
+    /*    background-image: url(/images/work.svg);
+    */
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 999;
@@ -671,9 +678,16 @@ h2 {
 @media screen and (max-width: 768px) {
     #colorlib-contact,
     #colorlib-work {
-        background-size: cover;
-        background-position: 50%;
+        background-size: 900px;
+        background-position: 50% 8%;
         background-repeat: no-repeat;
+    }
+    .contact_info {
+        margin-top: 0em !important;
+
+    }
+    .test {
+        margin-top: 22em !important;
     }
 }
 
@@ -820,16 +834,20 @@ h2 {
     width: 100%;
     color: #fff;
     background-image: url(/images/Fill%201.svg);
-    background-size: 500px;
+    background-size: 400px;
     background-repeat: no-repeat;
-    background-position: 90% 90%;
+    background-position: 100% -50%;
 }
 
 @media screen and (max-width: 768px) {
     #footer {
 
         background-size: 370px;
-        background-position: 100%;
+        background-position: 120% 100%;
+    }
+
+    .work-entry-flex {
+        margin-bottom: 200%;
     }
 }
 
