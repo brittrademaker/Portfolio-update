@@ -143,7 +143,7 @@ main {
     opacity: 1;
     z-index: 99;
     font-family: Futura;
-    background-color: var(--color-light-orange);
+    background-color: var(--color-dark-orange);
     justify-content: center;
     color: #142FBB !important;
     text-decoration: none !important;
@@ -236,6 +236,7 @@ main {
     text-transform: lowercase;
     padding: 1.5em 4em;
     align-self: center;
+    letter-spacing: 7px;
     bottom: 0px;
     position: fixed;
     cursor: pointer;
